@@ -123,7 +123,7 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
   for(unsigned short i = 0; i < capacidad; i++)
     {
       int suma = 0;
-      suma = a -> datos[i] + b -> datos[k];
+      suma = a -> datos[i] + b -> datos[i];
       c -> datos[i] = suma;
       
     }
