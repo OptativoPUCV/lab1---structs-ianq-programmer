@@ -120,7 +120,7 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
-  for(unsigned short i = 0; i < capacidad; i++)
+  for(unsigned short i = 0; i < a -> capacidad; i++)
     {
       int suma = 0;
       suma = a -> datos[i] + b -> datos[i];
