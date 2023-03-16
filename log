@@ -45,3 +45,28 @@ Thu 16 Mar 2023 03:30:36 PM UTC:
  tests:  1|6
 total_score: 10/70
 51f846d
+Thu 16 Mar 2023 03:36:17 PM UTC: 
+ exercises.c | 18 ++++++++++++++++--
+ 1 file changed, 16 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:33:3: error: invalid type argument of unary ‘*’ (have ‘int’)
+   33 |   *min[0];
+      |   ^~~~~~~
+exercises.c:34:3: error: invalid type argument of unary ‘*’ (have ‘int’)
+   34 |   *max[0];
+      |   ^~~~~~~
+exercises.c:36:31: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+   36 |   for(unsigned short i = 0, i < n, i++)
+      |                               ^
+exercises.c:47:1: error: expected expression before ‘}’ token
+   47 | }
+      | ^
+exercises.c:47:1: error: expected expression before ‘}’ token
+exercises.c:47:1: error: expected expression before ‘}’ token
+exercises.c:36:22: error: unused variable ‘i’ [-Werror=unused-variable]
+   36 |   for(unsigned short i = 0, i < n, i++)
+      |                      ^
+cc1: all warnings being treated as errors
+Compilation failed
+8719f70
