@@ -149,3 +149,17 @@ Thu 16 Mar 2023 04:05:34 PM UTC:
  tests:  6|2
 total_score: 50/70
 834fd1c
+Thu 16 Mar 2023 04:18:02 PM UTC: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:123:33: error: ‘capacidad’ undeclared (first use in this function)
+  123 |   for(unsigned short i = 0; i < capacidad; i++)
+      |                                 ^~~~~~~~~
+exercises.c:123:33: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:126:25: error: ‘k’ undeclared (first use in this function)
+  126 |       suma = a -> datos[k] + b -> datos[k];
+      |                         ^
+Compilation failed
+b115770
