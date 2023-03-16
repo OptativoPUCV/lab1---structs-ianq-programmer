@@ -90,7 +90,7 @@ Vector * crearVector(int n) {
   if(vectortmp -> datos == NULL) return NULL;
 
   vectortmp -> capacidad = n;
-   return NULL;
+   return vectortmp;
 }
 
 /*
