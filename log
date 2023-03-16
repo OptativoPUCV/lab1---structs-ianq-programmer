@@ -95,3 +95,22 @@ Thu 16 Mar 2023 03:43:49 PM UTC:
  tests:  3|4
 total_score: 30/70
 f347c72
+Thu 16 Mar 2023 03:56:48 PM UTC: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:17: error: invalid operands to binary == (have ‘Vector’ and ‘void *’)
+   88 |   if(*vectortmp == NULL) return NULL;
+      |      ~~~~~~~~~~ ^~
+      |      |
+      |      Vector
+exercises.c:89:26: error: comparison between pointer and integer [-Werror]
+   89 |   if(*vectortmp -> datos == NULL) return NULL;
+      |                          ^~
+exercises.c:91:26: error: statement with no effect [-Werror=unused-value]
+   91 |   vectortmp -> capacidad == n;
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e6acead
