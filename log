@@ -163,3 +163,17 @@ exercises.c:126:25: error: ‘k’ undeclared (first use in this function)
       |                         ^
 Compilation failed
 b115770
+Thu 16 Mar 2023 04:18:12 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:123:33: error: ‘capacidad’ undeclared (first use in this function)
+  123 |   for(unsigned short i = 0; i < capacidad; i++)
+      |                                 ^~~~~~~~~
+exercises.c:123:33: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:126:41: error: ‘k’ undeclared (first use in this function)
+  126 |       suma = a -> datos[i] + b -> datos[k];
+      |                                         ^
+Compilation failed
+c8415e1
