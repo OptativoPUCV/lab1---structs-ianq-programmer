@@ -70,3 +70,16 @@ exercises.c:36:22: error: unused variable ‘i’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 8719f70
+Thu 16 Mar 2023 03:37:07 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:33:3: error: invalid type argument of unary ‘*’ (have ‘int’)
+   33 |   *min[0];
+      |   ^~~~~~~
+exercises.c:34:3: error: invalid type argument of unary ‘*’ (have ‘int’)
+   34 |   *max[0];
+      |   ^~~~~~~
+Compilation failed
+2159e8e
